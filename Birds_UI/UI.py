@@ -1,0 +1,213 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'UI.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(891, 688)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.ImageLabel = QtWidgets.QLabel(self.centralwidget)
+        self.ImageLabel.setGeometry(QtCore.QRect(95, 80, 330, 290))
+        self.ImageLabel.setText("")
+        self.ImageLabel.setObjectName("ImageLabel")
+        self.SelectImage = QtWidgets.QPushButton(self.centralwidget)
+        self.SelectImage.setGeometry(QtCore.QRect(170, 430, 180, 60))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.SelectImage.setFont(font)
+        self.SelectImage.setIconSize(QtCore.QSize(16, 16))
+        self.SelectImage.setAutoDefault(False)
+        self.SelectImage.setObjectName("SelectImage")
+        self.Predict = QtWidgets.QPushButton(self.centralwidget)
+        self.Predict.setGeometry(QtCore.QRect(170, 540, 180, 60))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.Predict.setFont(font)
+        self.Predict.setObjectName("Predict")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(510, 130, 161, 61))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.GtText = QtWidgets.QTextBrowser(self.centralwidget)
+        self.GtText.setGeometry(QtCore.QRect(670, 140, 141, 51))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.GtText.setFont(font)
+        self.GtText.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.GtText.setObjectName("GtText")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(510, 190, 161, 61))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.PrdText = QtWidgets.QTextBrowser(self.centralwidget)
+        self.PrdText.setGeometry(QtCore.QRect(670, 200, 141, 51))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.PrdText.setFont(font)
+        self.PrdText.setObjectName("PrdText")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(510, 310, 161, 61))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(510, 370, 161, 61))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.RightCount = QtWidgets.QTextBrowser(self.centralwidget)
+        self.RightCount.setGeometry(QtCore.QRect(670, 320, 141, 51))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(24)
+        font.setBold(True)
+        font.setWeight(75)
+        self.RightCount.setFont(font)
+        self.RightCount.setObjectName("RightCount")
+        self.WrongCount = QtWidgets.QTextBrowser(self.centralwidget)
+        self.WrongCount.setGeometry(QtCore.QRect(670, 380, 141, 51))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(24)
+        font.setBold(True)
+        font.setWeight(75)
+        self.WrongCount.setFont(font)
+        self.WrongCount.setObjectName("WrongCount")
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(510, 430, 161, 61))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_6.setFont(font)
+        self.label_6.setObjectName("label_6")
+        self.Accuracy = QtWidgets.QTextBrowser(self.centralwidget)
+        self.Accuracy.setGeometry(QtCore.QRect(670, 440, 141, 51))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(24)
+        font.setBold(True)
+        font.setWeight(75)
+        self.Accuracy.setFont(font)
+        self.Accuracy.setObjectName("Accuracy")
+        self.Exit = QtWidgets.QPushButton(self.centralwidget)
+        self.Exit.setGeometry(QtCore.QRect(590, 530, 180, 60))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.Exit.setFont(font)
+        self.Exit.setObjectName("Exit")
+        self.label_7 = QtWidgets.QLabel(self.centralwidget)
+        self.label_7.setGeometry(QtCore.QRect(510, 250, 161, 61))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_7.setFont(font)
+        self.label_7.setObjectName("label_7")
+        self.TotalCount = QtWidgets.QTextBrowser(self.centralwidget)
+        self.TotalCount.setGeometry(QtCore.QRect(670, 260, 141, 51))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(24)
+        font.setBold(True)
+        font.setWeight(75)
+        self.TotalCount.setFont(font)
+        self.TotalCount.setObjectName("TotalCount")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 891, 23))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.SelectImage.setText(_translate("MainWindow", "Select Image "))
+        self.Predict.setText(_translate("MainWindow", "Predict"))
+        self.label_2.setText(_translate("MainWindow", "   Groundtruth"))
+        self.GtText.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:20pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.label_3.setText(_translate("MainWindow", "   Prediction"))
+        self.PrdText.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:20pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.label_4.setText(_translate("MainWindow", " Right Count"))
+        self.label_5.setText(_translate("MainWindow", " Wrong Count"))
+        self.RightCount.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:24pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.WrongCount.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:24pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.label_6.setText(_translate("MainWindow", "   Accuracy"))
+        self.Accuracy.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:24pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.Exit.setText(_translate("MainWindow", "Exit"))
+        self.label_7.setText(_translate("MainWindow", " Total Count"))
+        self.TotalCount.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:24pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+

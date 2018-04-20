@@ -1,0 +1,19 @@
+# Copyright (c) 2018/4/17 Hu Zhiming JimmyHu@pku.edu.cn All Rights Reserved.
+# The steps to preprocess the original images.
+
+
+# directories & files:
+'images' directory: stores the original images(splitted to 200 classes) that are downloaded from http://www.vision.caltech.edu/visipedia/CUB-200-2011.html.
+'ImageInfo' directory: stores the image info files that are used by 'DataPreprocess.m'.
+'DataPreprocess.m': Split the original images into train, validation & test images and augment the train data.
+'CreateTFRecords.py': Use the splitted images and augmented train data to create train_aug.tfrecords, validation.tfrecords & test.tfrecords files.
+'CalculateBottlenecks.py': Calculate the Bottleneck values(the output of the Hub Module) of the original image data.
+'PickUpTestImages.m': Pick Up a small part of the test images for UI test.
+
+
+# Usage:
+Step1: Download the original images from http://www.vision.caltech.edu/visipedia/CUB-200-2011.html and store them in 'images/' directory.
+Step2: Run 'DataPreprocess.m' file to split the images and augment the train images.
+Step3: Run 'CreateTFRecords.py' file to create the original TFRecord files.
+Step4: Run 'CalculateBottlenecks.py' to calculate the bottleneck values of the original image data and save them into TFRecord files.
+Step4: You will get the TFRecord files of the bottleneck values in '../Dataset/' directory after Step4. 

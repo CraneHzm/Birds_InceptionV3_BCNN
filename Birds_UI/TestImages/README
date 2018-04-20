@@ -1,0 +1,3 @@
+Stores the test images for our UI.
+Directories '1'-'200' save test images of the corresponding labels.
+'classes.txt': saves the class names of their corresponding labels.
